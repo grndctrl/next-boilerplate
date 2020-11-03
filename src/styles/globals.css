@@ -1,0 +1,65 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/*  */
+@import './text.css';
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  @apply min-h-screen;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  &.js-navigation-active {
+    height: 100vh;
+    overflow-y: scroll;
+
+    #__next {
+      width: 100%;
+      height: 100vh;
+      overflow-y: hidden;
+    }
+  }
+}
+
+a {
+  @apply text-gray-800 border-b border-gray-800;
+}
+
+.container {
+  @apply px-8;
+}
+
+.header-offset {
+  padding-top: theme('variables.header.height.sm');
+}
+
+@screen lg {
+  .header-offset {
+    padding-top: theme('variables.header.height.lg');
+  }
+}
+
+figure.image {
+  /* @apply w-full relative;
+
+  &::after {
+    display: block;
+    position: relative;
+    width: 100%;
+    content: '';
+    padding-top: 50%;
+  }
+
+  > * {
+    @apply absolute inset-0;
+  } */
+}

@@ -1,0 +1,28 @@
+@import '@/styles/variables.css';
+
+.navigation {
+  @apply fixed z-30 left-0 h-screen w-full bg-white;
+  bottom: 100vh;
+
+  .menu-item {
+    @apply mx-4 text-lg;
+  }
+}
+
+.menu {
+  @apply w-full h-full flex flex-col items-center justify-center;
+}
+
+.menuItem {
+  @apply text-2xl;
+}
+
+@screen lg {
+  .navigation {
+    @apply hidden;
+  }
+
+  .menuItem {
+    @apply mx-4 text-base;
+  }
+}

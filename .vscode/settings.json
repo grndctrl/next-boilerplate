@@ -1,0 +1,20 @@
+{
+  "fastFolderStructure.structures": [
+    {
+      "name": "Template",
+      "customVariables": [],
+      "structure": [
+        {
+          "fileName": "Template.jsx"
+        },
+        {
+          "fileName": "index.js",
+          "template": "Template-index.js"
+        },
+        {
+          "fileName": "styles.module.css"
+        }
+      ]
+    }
+  ]
+}

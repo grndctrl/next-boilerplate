@@ -1,0 +1,29 @@
+.header {
+  @apply fixed z-40 top-0 w-full flex justify-between items-center px-8 bg-white;
+  height: theme('variables.header.height.sm');
+}
+
+.menu {
+  @apply hidden;
+}
+
+.burger {
+  @apply w-8 h-8 flex flex-wrap items-center;
+}
+
+.bun {
+  @apply w-full bg-gray-800;
+  height: 2px;
+}
+
+@screen lg {
+  .header {
+    height: theme('variables.header.height.lg');
+  }
+  .menu {
+    @apply flex -mx-4;
+  }
+  .burger {
+    @apply hidden;
+  }
+}
