@@ -20,6 +20,11 @@ const Menu = ({ className }) => {
           <a>GraphQL Example</a>
         </Link>
       </li>
+      <li className={styles.menuItem}>
+        <Link href="/r3f-example">
+          <a>r3f Example</a>
+        </Link>
+      </li>
     </ul>
   )
 }

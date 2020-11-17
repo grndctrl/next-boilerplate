@@ -1,4 +1,6 @@
-module.exports = {
+const withTM = require('next-transpile-modules')(['drei', 'three'])
+
+module.exports = withTM({
   images: {
     domains: ['localhost:8080'],
   },
@@ -15,4 +17,4 @@ module.exports = {
 
     return config
   },
-}
+})

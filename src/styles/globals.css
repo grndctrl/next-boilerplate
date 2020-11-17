@@ -30,12 +30,19 @@ body {
   }
 }
 
+canvas {
+  &:focus {
+    outline: none;
+  }
+}
+
 a {
   @apply text-gray-800 border-b border-gray-800;
 }
 
 .container {
   @apply px-8;
+  max-width: none;
 }
 
 .header-offset {
