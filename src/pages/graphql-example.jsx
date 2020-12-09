@@ -1,5 +1,5 @@
-import { apolloClient } from '@/utilities/apollo'
-import queries from '@/utilities/queries.graphql'
+import { apolloClient } from '@src/utilities/apollo'
+import queries from '@src/utilities/queries.graphql'
 
 const GraphQLExample = ({ api }) => {
   console.log(api)

@@ -4,8 +4,8 @@ import { useEffect } from 'react'
 import classNames from 'classnames'
 import { a, useSprings } from '@react-spring/web'
 
-import { presets } from '@/utilities/animations'
-import { useLayoutStore } from '@/utilities/zustand'
+import { presets } from '@src/utilities/animations'
+import { useLayoutStore } from '@src/utilities/zustand'
 
 const Burger = () => {
   const isNavigationOpen = useLayoutStore((state) => state.isNavigationOpen)

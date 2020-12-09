@@ -6,8 +6,8 @@ import { a, useSpring } from '@react-spring/web'
 import throttle from 'lodash/throttle'
 import debounce from 'lodash/debounce'
 
-import { presets } from '@/utilities/animations'
-import { useLayoutStore } from '@/utilities/zustand'
+import { presets } from '@src/utilities/animations'
+import { useLayoutStore } from '@src/utilities/zustand'
 import Menu from './Menu'
 
 const Navigation = () => {

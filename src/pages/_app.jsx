@@ -1,15 +1,15 @@
-import '@/styles/globals.css'
+import '@src/styles/globals.css'
 
 import { useEffect } from 'react'
 import { ApolloProvider } from '@apollo/client'
 import { a, Transition } from '@react-spring/web'
 
-import { useAppStore } from '@/utilities/zustand'
-import { apolloClient } from '@/utilities/apollo'
-import { Wiper } from '@/layout/Wiper'
-import { Navigation } from '@/layout/Navigation'
-import { Header } from '@/layout/Header'
-import { Footer } from '@/layout/Footer'
+import { useAppStore } from '@src/utilities/zustand'
+import { apolloClient } from '@src/utilities/apollo'
+import { Wiper } from '@src/layout/Wiper'
+import { Navigation } from '@src/layout/Navigation'
+import { Header } from '@src/layout/Header'
+import { Footer } from '@src/layout/Footer'
 
 function App({ Component, pageProps, router }) {
   const loaded = useAppStore((state) => state.loaded)

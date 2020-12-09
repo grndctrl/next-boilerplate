@@ -1,6 +1,6 @@
 import styles from './styles.module.css'
 
-import { Menu } from '@/layout/Navigation'
+import { Menu } from '@src/layout/Navigation'
 import Burger from './Burger'
 
 const Header = () => {

@@ -32,7 +32,7 @@ module.exports = {
   plugins: {
     'postcss-import': {
       path: ['.'],
-      resolve: (path) => path.replace('@', 'src'),
+      resolve: (path) => path.replace('@src', 'src'),
     },
     'postcss-nested': {},
     'postcss-functions': functionsOptions,

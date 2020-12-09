@@ -3,7 +3,7 @@ import styles from './styles.module.css'
 import Router from 'next/router'
 import { a, useSpring, config } from '@react-spring/web'
 
-import { presets } from '@/utilities/animations'
+import { presets } from '@src/utilities/animations'
 
 const Wiper = () => {
   const [spring, animate] = useSpring({ config: presets.medium, to: { y: '100vh' } }, [])
