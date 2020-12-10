@@ -3,8 +3,8 @@ import { setContext } from '@apollo/client/link/context'
 
 const api =
   process.env.NODE_ENV === 'development'
-    ? process.env.DEV_SERVER + process.env.API_URL
-    : process.env.PROD_SERVER + process.env.API_URL
+    ? process.env.NEXT_PUBLIC_DEV_SERVER + process.env.NEXT_PUBLIC_API_URL
+    : process.env.NEXT_PUBLIC_PROD_SERVER + process.env.NEXT_PUBLIC_API_URL
 
 const httpLink = createHttpLink({
   uri: api,
